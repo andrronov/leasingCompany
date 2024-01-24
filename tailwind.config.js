@@ -4,7 +4,15 @@ export default {
   darkMode: 'class',
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        dev: {
+          100: "#3366FF",
+          300: "#1F5BFF",
+          500: "#2453E0"
+        }
+      }
+    },
     screens: {
       o: "1px",
        xs: "614px",
