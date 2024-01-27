@@ -16,6 +16,7 @@ export default {
     screens: {
       o: "1px",
        xs: "614px",
+       s: "768px",
        sm: "1002px",
        md: "1022px",
        lg: "1092px",
