@@ -7,6 +7,7 @@ import aboutCompany from './components/aboutCompany.vue'
 import leasingItems from './components/leasingItems.vue';
 import advantages from './components/advantages.vue';
 import leasingAgent from './components/leasingAgent.vue'
+import popQuestions from './components/popQuestions.vue'
 
 const darkMode = ref(false)
 const marginBottom = ref('mb-24')
@@ -95,6 +96,7 @@ const marginBottom = ref('mb-24')
     <advantages :class="marginBottom" />
     <div class="h-20 w-full bg-dev-100" :class="marginBottom"></div>
     <leasingAgent :class="marginBottom" />
+    <popQuestions :class="marginBottom" />
   </div>
 </template>
 
