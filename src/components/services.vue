@@ -1,5 +1,5 @@
 <template>
-   <div class="bg-white">
+   <section class="bg-white">
      <div class="mx-auto max-w-7xl px-6 lg:px-8">
        <div class="mx-auto max-w-2xl lg:text-center">
          <h2 class="text-base font-semibold leading-7 text-dev-300">Старт быстрее</h2>
@@ -23,7 +23,7 @@
           <button @click="submitApplication" class="p-3 w-44 border-2 border-dev-500 rounded-2xl font-bold hover:bg-dev-500 hover:text-white">Оставить заявку</button>
        </div>
       </div>
-   </div>
+    </section>
  </template>
  
  <script setup>

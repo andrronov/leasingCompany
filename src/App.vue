@@ -4,8 +4,12 @@ import headNav from './components/headNav.vue'
 import defaultButton from './components/defaultButton.vue'
 import services from './components/services.vue'
 import aboutCompany from './components/aboutCompany.vue'
+import leasingItems from './components/leasingItems.vue';
+import advantages from './components/advantages.vue';
+import leasingAgent from './components/leasingAgent.vue'
 
 const darkMode = ref(false)
+const marginBottom = ref('mb-24')
 </script>
 
 <template>
@@ -21,31 +25,31 @@ const darkMode = ref(false)
     </div>
     <headNav></headNav>
     <div class="bg-gray-400" style="height: 580px" id="slider"></div>
-    <div style="height: 86px" id="divider"></div>
+    <div class="h-20" id="divider"></div>
     <!-- наши услуги -->
-    <services class="mb-24" />
+    <services :class="marginBottom" />
     <!-- синяя полоса с условиями -->
-    <div class="w-full bg-dev-500">
+    <section class="w-full bg-dev-500">
       <div class="hidden h-44 s:flex max-w-7xl mx-auto flex-row justify-between items-center px-6">
         <div class="flex flex-col justify-evenly w-1/5 text-white h-full">
           <p class="text-3xl font-bold">от 2 часов</p>
           <div class="h-0.5 bg-white"></div>
           <p class="text-2xl font-normal">Решение по сделке</p>
         </div>
-        <div class="flex flex-col justify-evenly w-1/5 text-white h-full">
+        <div class="flex flex-col text-center justify-evenly w-1/5 text-white h-full">
           <p class="text-3xl font-bold">от 0%</p>
           <div class="h-0.5 bg-white"></div>
           <p class="text-2xl font-normal">Аванс</p>
         </div>
-        <div class="flex flex-col justify-evenly w-1/5 text-white h-full">
+        <div class="flex flex-col text-center justify-evenly w-1/5 text-white h-full">
           <p class="text-3xl font-bold">по 2 документам</p>
           <div class="h-0.5 bg-white"></div>
           <p class="text-2xl font-normal">Оформление</p>
         </div>
-        <div class="flex flex-col justify-evenly w-1/5 text-white h-full">
+        <div class="flex flex-col text-end justify-evenly w-1/5 text-white h-full">
           <p class="text-3xl font-bold">от 6 до 84</p>
           <div class="h-0.5 bg-white"></div>
-          <p class="text-2xl font-normal">Срок лизинга в месяцах</p>
+          <p class="text-2xl font-normal">Месяцев лизинга</p>
         </div>
       </div>
       <div class="s:hidden min-h-96 max-w-lg mx-auto flex flex-col justify-between p-6 gap-8">
@@ -67,15 +71,15 @@ const darkMode = ref(false)
         <div class="flex flex-col w-full justify-evenly text-white h-1/5 gap-2">
           <p class="text-3xl font-bold">от 6 до 84</p>
           <div class="h-0.5 bg-white"></div>
-          <p class="text-2xl font-normal">Срок лизинга в месяцах</p>
+          <p class="text-2xl font-normal">Месяцев лизинга</p>
         </div>
       </div>
-    </div>
-    <div class="h-16 text-dev-300 w-full flex items-center">
+    </section>
+    <section class="h-16 text-dev-300 w-full flex items-center">
       <marquee>Наши партнеры : ООО "Газпромбанк Автолизинг", АО "Сбербанк Лизинг", АО "ВТБ Лизинг", ООО "Каркаде", ООО "Интерлизинг", ООО "МК Лизинг", ООО "МСБ-Лизинг", ООО "Совкомбанк Лизинг", ООО "Фера", </marquee>
-    </div>
+    </section>
     <!-- партнеры -->
-    <div class="bg-white py-5 my-8 sm:py-6">
+    <section class="bg-white py-5 my-8 sm:py-6">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
           <img class="col-span-2 w-48 object-contain lg:col-span-1" src="/gazprom.svg" alt="gazprom" />
@@ -85,8 +89,12 @@ const darkMode = ref(false)
           <img class="col-span-2 col-start-2 w-48 object-contain sm:col-start-auto lg:col-span-1" src="/mk.svg" alt="mk" />
         </div>
       </div>
-    </div>
-    <aboutCompany />
+    </section>
+    <aboutCompany :class="marginBottom" />
+    <leasingItems :class="marginBottom" />
+    <advantages :class="marginBottom" />
+    <div class="h-20 w-full bg-dev-100" :class="marginBottom"></div>
+    <leasingAgent :class="marginBottom" />
   </div>
 </template>
 
