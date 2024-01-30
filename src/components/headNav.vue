@@ -14,7 +14,7 @@
          <div class="flex flex-1 items-center justify-center">
            <div class="hidden sm:block w-full">
              <div class="flex justify-between">
-               <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
+               <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-blue-900 text-white' : 'text-gray-300 hover:bg-blue-800 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
              </div>
            </div>
          </div>

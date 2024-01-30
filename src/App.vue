@@ -8,6 +8,8 @@ import leasingItems from './components/leasingItems.vue';
 import advantages from './components/advantages.vue';
 import leasingAgent from './components/leasingAgent.vue'
 import popQuestions from './components/popQuestions.vue'
+import rates from './components/rates.vue'
+import mainSlider from './components/mainSlider.vue';
 
 const darkMode = ref(false)
 const marginBottom = ref('mb-24')
@@ -25,7 +27,7 @@ const marginBottom = ref('mb-24')
       </div>
     </div>
     <headNav></headNav>
-    <div class="bg-gray-400" style="height: 580px" id="slider"></div>
+    <mainSlider />
     <div class="h-20" id="divider"></div>
     <!-- наши услуги -->
     <services :class="marginBottom" />
@@ -97,6 +99,7 @@ const marginBottom = ref('mb-24')
     <div class="h-20 w-full bg-dev-100" :class="marginBottom"></div>
     <leasingAgent :class="marginBottom" />
     <popQuestions :class="marginBottom" />
+    <rates />
   </div>
 </template>
 
