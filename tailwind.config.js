@@ -16,13 +16,13 @@ export default {
     screens: {
       o: "1px",
        xs: "614px",
-       s: "768px",
+       s: "769px",
        sm: "1002px",
        md: "1022px",
        lg: "1092px",
        xl: "1280px"
     }
   },
-  plugins: [],
+  plugins: ['@tailwindcss/forms'],
 }
 

@@ -10,9 +10,22 @@ import leasingAgent from './components/leasingAgent.vue'
 import popQuestions from './components/popQuestions.vue'
 import rates from './components/rates.vue'
 import mainSlider from './components/mainSlider.vue';
+import parallaxComponent from './components/parallaxComponent.vue'
+import footerComponent from './components/footerComponent.vue'
 
 const darkMode = ref(false)
 const marginBottom = ref('mb-24')
+
+const navigation = [
+   { name: 'О нас', href: '#', current: true },
+   { name: 'Заявка', href: '#', current: false },
+   { name: 'Предметы лизинга', href: '#', current: false },
+   { name: 'Авто с пробегом в лизинг', href: '#', current: false },
+   { name: 'Наши услуги', href: '#', current: false },
+   { name: 'Преимущества', href: '#', current: false },
+   { name: 'Отзывы', href: '#', current: false },
+   { name: 'Контакты', href: '#', current: false },
+ ]
 </script>
 
 <template>
@@ -26,7 +39,7 @@ const marginBottom = ref('mb-24')
         </div>
       </div>
     </div>
-    <headNav></headNav>
+    <headNav :nav="navigation"></headNav>
     <mainSlider />
     <div class="h-20" id="divider"></div>
     <!-- наши услуги -->
@@ -99,10 +112,8 @@ const marginBottom = ref('mb-24')
     <div class="h-20 w-full bg-dev-100" :class="marginBottom"></div>
     <leasingAgent :class="marginBottom" />
     <popQuestions :class="marginBottom" />
+    <parallaxComponent />
     <rates />
+    <footerComponent :nav="navigation" />
   </div>
 </template>
-
-<style scoped>
-
-</style>
