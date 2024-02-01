@@ -23,6 +23,6 @@ export default {
        xl: "1280px"
     }
   },
-  plugins: ['@tailwindcss/forms'],
+  plugins: [require('@tailwindcss/forms')],
 }
 
