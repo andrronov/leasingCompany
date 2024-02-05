@@ -55,16 +55,16 @@
      icon: UserPlusIcon,
    },
    {
-     name: 'Для клиентов',
+     name: 'Работаем',
      description:
-       'наши услуги ничего не стоят, никаких дополнительных комиссий !',
-     icon: CurrencyDollarIcon,
+       'с проверенными поставщиками',
+     icon: CurrencyDollarIcon
    },
    {
-     name: 'Cделаем выгоднее',
+     name: 'Сотрудничаем',
      description:
-       'если пришлете нам расчеты от лизинговой компании',
-     icon: BanknotesIcon,
+       'с топ-10 лизинговыми компаниями',
+      icon: BanknotesIcon,
    },
  ]
 

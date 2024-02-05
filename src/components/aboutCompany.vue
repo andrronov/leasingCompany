@@ -4,8 +4,8 @@
        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
          <div class="lg:pr-8 lg:pt-4">
            <div class="lg:max-w-lg">
-             <!-- <h2 class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2> -->
-             <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Название компании</p>
+             <h2 class="text-base font-semibold leading-7 text-indigo-600">о компании</h2>
+             <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Leasing Paradise</p>
              <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                <div v-for="feature in features" :key="feature.name" class="relative pl-9">
                  <dt class="inline font-semibold text-gray-900">
@@ -16,7 +16,7 @@
                  <dd class="inline">{{ feature.description }}</dd>
                </div>
              </dl>
-             <p class="mt-6 text-lg leading-8 text-gray-900">В наших интересах - помощь в развитии бизнеса и экономия ресурсов компаний наших клиентов.</p>
+             <p class="mt-6 text-lg leading-8 text-dev-300">В наших интересах - помощь в развитии бизнеса и экономия ресурсов компаний наших клиентов.</p>
            </div>
          </div>
          <img src="" alt="Product screenshot" class="w-[48rem] bg-gray-500 max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442" />
@@ -30,7 +30,7 @@
  
  const features = [
    {
-     name: '"" -  это профессиональный брокер',
+     name: 'Leasing Paradise -  это профессиональный брокер',
      description:
        'в сфере финансовых услуг.',
      icon: PaperAirplaneIcon,
