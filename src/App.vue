@@ -91,9 +91,9 @@ const navigation = [
         </div>
       </div>
     </section>
-    <section class="h-16 text-dev-300 w-full flex items-center">
+    <!-- <section class="h-16 text-dev-300 w-full flex items-center">
       <marquee>Наши партнеры : ООО "Газпромбанк Автолизинг", АО "Сбербанк Лизинг", АО "ВТБ Лизинг", ООО "Каркаде", ООО "Интерлизинг", ООО "МК Лизинг", ООО "МСБ-Лизинг", ООО "Совкомбанк Лизинг", ООО "Фера", </marquee>
-    </section>
+    </section> -->
     <!-- партнеры -->
     <!-- <section class="bg-white py-5 my-8 sm:py-6">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
