@@ -8,20 +8,20 @@
                 <label class="block text-white text-sm font-bold mb-2" for="username">
                   Имя
                 </label>
-                <input class="shadow focus:border-dev-300 appearance-none border-2 rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Имя">
+                <input class="shadow focus:border-dev-300 appearance-none border-2 rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Имя">
               </div>
               <div>
                 <label class="block text-white text-sm font-bold mb-2" for="phone">
                   Телефон
                 </label>
-                <input class="shadow focus:border-dev-300 appearance-none border-2 rounded w-full py-2 px-3 text-white mb-3 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="phone" placeholder="+7">
+                <input class="shadow focus:border-dev-300 appearance-none border-2 rounded w-full py-2 px-3 text-black mb-3 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="phone" placeholder="+7">
                 <!-- <p class="text-red-500 text-xs italic">Please choose a password.</p> -->
               </div>
               <div class="mb-6">
                 <label class="block text-white text-sm font-bold mb-2" for="number">
                   ИНН
                 </label>
-                <input class="shadow focus:border-dev-300 appearance-none border-2 rounded w-full py-2 px-3 text-white mb-3 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="number" placeholder="ИНН">
+                <input class="shadow focus:border-dev-300 appearance-none border-2 rounded w-full py-2 px-3 text-black mb-3 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="number" placeholder="ИНН">
                 <!-- <p class="text-red-500 text-xs italic">Please choose a password.</p> -->
               </div>
               <label class="block text-white text-sm font-bold mb-2" for="leasType">
