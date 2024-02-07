@@ -4,10 +4,10 @@
        <h2 class="font-semibold text-xl">{{slide.title}}</h2>
        <p class="font-medium bg-gray-900/20 p-2">{{ slide.text }}</p>
        <div>
-         <p class="text-gray-300 text-base mb-2">Оставьте заявку и мы свяжемся с Вами в ближайшее время!</p>
-         <button class="bg-dev-100 p-3 rounded-full text-white dark:text-black cursor-pointer hover:bg-dev-500 hover:text-gray-100">
+         <p class="text-gray-300 text-base mb-4">Оставьте заявку и мы свяжемся с Вами в ближайшее время!</p>
+         <a href="#application" v-smooth-scroll="{ duration: 1000, offset: -50 }" class="bg-dev-100 p-3 rounded-full text-white dark:text-black cursor-pointer hover:bg-dev-500 hover:text-gray-100">
             Оставить заявку
-         </button>
+         </a>
        </div>
      </slide>
  

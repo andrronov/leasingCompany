@@ -12,7 +12,7 @@
         <p v-if="item.adding" class="text-dev-300 font-semibold mt-1 text-lg">{{ item.adding }}</p>
       </div>
     </div>
-    <defaultButton class="mt-12">Оставить заявку</defaultButton>
+    <a href="#application" v-smooth-scroll="{ duration: 1000, offset: -50 }" class="p-3 mt-8 text-center w-44 border-2 border-dev-500 rounded-2xl font-bold hover:bg-dev-500 hover:text-white">Оставить заявку</a>
   </section>
 </template>
 

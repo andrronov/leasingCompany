@@ -16,7 +16,7 @@
                  <dd class="inline">{{ feature.description }}</dd>
                </div>
              </dl>
-             <p class="mt-6 text-lg leading-8 text-dev-300">В наших интересах - помощь в развитии бизнеса и экономия ресурсов компаний наших клиентов.</p>
+             <p class="mt-6 text-lg leading-8 text-dev-300">Наш приоритет - помощь в развитии бизнеса и оптимизация процесса.</p>
            </div>
          </div>
          <img src="/parllx.png" alt="Product screenshot" class="w-[48rem] bg-gray-500 max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442" />
@@ -41,8 +41,8 @@
      icon: CheckCircleIcon,
    },
    {
-     name: 'Предоставляем',
-     description: 'Лучшие условия лизинговых сделок для наших клиентов.',
+     name: 'Гарантируем',
+     description: 'нашим клиентам самые выгодные условия для лизинговых сделок.',
      icon: CubeIcon,
    },
    {

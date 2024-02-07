@@ -15,9 +15,9 @@
          <p>ОГРН **********</p>
       </div>
       <div class="hidden xs:flex flex-col flex-wrap text-center s:flex-row items-center">
-         <a v-for="item in nav" :key="item.name" :href="item.href" class="text-gray-300 hover:bg-blue-800 hover:text-white rounded-md py-1 s:px-3 s:py-2 text-sm font-medium" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
+         <a v-for="item in nav" :key="item.name" v-smooth-scroll="{ duration: 1000, offset: -50 }" :href="item.href" class="text-gray-300 hover:bg-blue-800 hover:text-white rounded-md py-1 s:px-3 s:py-2 text-sm font-medium" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
       </div>
-      <a href="#top" class="flex flex-row items-center gap-1 h-full">Наверх
+      <a v-smooth-scroll="{ duration: 1000, offset: -50 }" href="#top" class="flex flex-row items-center gap-1 h-full">Наверх
          <img src="/arrowUp.svg" alt="arrow" class="w-6 h-6">
       </a>
    </div>

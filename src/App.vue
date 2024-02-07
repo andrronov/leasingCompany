@@ -12,24 +12,26 @@ import rates from './components/rates.vue'
 import mainSlider from './components/mainSlider.vue';
 import parallaxComponent from './components/parallaxComponent.vue'
 import footerComponent from './components/footerComponent.vue'
+import splashScreen from './components/splashScreen.vue'
 
 const darkMode = ref(false)
 const marginBottom = ref('mb-24')
 
 const navigation = [
-   { name: 'О нас', href: '#', current: true },
-   { name: 'Заявка', href: '#', current: false },
-   { name: 'Предметы лизинга', href: '#', current: false },
-  //  { name: 'Авто с пробегом в лизинг', href: '#', current: false },
-   { name: 'Наши услуги', href: '#', current: false },
-   { name: 'Преимущества', href: '#', current: false },
-   { name: 'Отзывы', href: '#', current: false },
-   { name: 'Контакты', href: '#', current: false },
+   { name: 'Услуги', href: '#services', current: true },
+   { name: 'О нас', href: '#about', current: false },
+   { name: 'Предметы лизинга', href: '#items', current: false },
+   { name: 'Преимущества', href: '#advantages', current: false },
+   { name: 'Частые вопросы', href: '#questions', current: false },
+   { name: 'Заявка', href: '#application', current: false },
+   { name: 'Отзыв клиента', href: '#rate', current: false },
+   { name: 'Контакты', href: '#contacts', current: false },
  ]
 </script>
 
 <template>
-  <div :class="{'dark': darkMode}" class="flex flex-col">
+  <splashScreen />
+  <div id="top" :class="{'dark': darkMode}" class="flex flex-col">
     <div class="w-full">
       <div class="flex flex-row justify-between items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 h-20">
         <h1 class="text-lg xs:text-xl" id="font">Leasing Paradise</h1>
@@ -43,7 +45,7 @@ const navigation = [
     <mainSlider />
     <div class="h-20" id="divider"></div>
     <!-- наши услуги -->
-    <services :class="marginBottom" />
+    <services id="services" :class="marginBottom" />
     <!-- синяя полоса с условиями -->
     <section class="w-full bg-dev-500">
       <div class="hidden h-44 s:flex max-w-7xl mx-auto flex-row justify-between items-center px-6">
@@ -106,15 +108,15 @@ const navigation = [
         </div>
       </div>
     </section> -->
-    <aboutCompany :class="marginBottom" />
-    <leasingItems :class="marginBottom" />
-    <advantages :class="marginBottom" />
+    <aboutCompany id="about" :class="marginBottom" />
+    <leasingItems id="items" :class="marginBottom" />
+    <advantages id="advantages" :class="marginBottom" />
     <div class="h-20 w-full bg-dev-100" :class="marginBottom"></div>
     <leasingAgent :class="marginBottom" />
-    <popQuestions :class="marginBottom" />
-    <parallaxComponent />
-    <rates />
-    <footerComponent :nav="navigation" />
+    <popQuestions id="questions" :class="marginBottom" />
+    <parallaxComponent id="application" />
+    <rates id="rate" />
+    <footerComponent id="contacts" :nav="navigation" />
   </div>
 </template>
 

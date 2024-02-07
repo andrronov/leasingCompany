@@ -20,7 +20,7 @@
          </dl>
        </div>
        <div class="mt-24 w-full flex flex-col items-center">
-          <button @click="submitApplication" class="p-3 w-44 border-2 border-dev-500 rounded-2xl font-bold hover:bg-dev-500 hover:text-white">Оставить заявку</button>
+          <a href="#application" v-smooth-scroll="{ duration: 1000, offset: -50 }" class="p-3 text-center w-44 border-2 border-dev-500 rounded-2xl font-bold hover:bg-dev-500 hover:text-white">Оставить заявку</a>
        </div>
       </div>
     </section>
