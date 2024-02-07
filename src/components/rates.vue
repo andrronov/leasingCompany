@@ -6,7 +6,7 @@
       <h3 class="text-center text-xl bg-dev-500 p-2 text-white">Отзыв нашего клиента!</h3>
       <figure class="mt-10">
         <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-          <p>Работа с лизинговой компанией оказалась очень приятной и эффективной. Сотрудники были профессиональными и помогли мне получить необходимое оборудование без лишних сложностей. Очень рекомендую эту компанию!</p>
+          <p>Работа с лизинговой компанией оказалась очень приятной и эффективной. Сотрудники - настоящие профессионалы, помогли мне получить необходимое оборудование без лишних сложностей. Очень рекомендую эту компанию!</p>
         </blockquote>
         <figcaption class="mt-10">
           <img class="mx-auto h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />

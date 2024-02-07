@@ -1,15 +1,15 @@
 <template>
   <footer class="w-full flex flex-col">
    <div id="f_upper" class="max-w-7xl mx-auto flex flex-col items-center gap-2 mb-6">
-      <h1 class="font-bold text-xl text-black mb-8">Leasing Paradise</h1>
+      <h1 class="text-lg xs:text-xl" id="font">Leasing Paradise</h1>
       <p>+7 (999) 999-99-99</p>
       <p>pochta@gmail.com</p>
-      <p>Г. Город</p>
+      <p>г. Москва</p>
       <p>Время работы: с 09:00 до 20:00</p>
    </div>
    <div id="f_downer" class="w-full flex px-2 sm:px-6 lg:px-8 flex-row justify-between items-center bg-dev-300 min-h-40 text-white text-sm">
       <div class="flex flex-col items-start gap-1">
-         <p>© 2024 Leasing Paradise</p>
+         <h1 class="text-lg xs:text-xl" id="font">Leasing Paradise</h1>
          <p>ИП **** *****</p>
          <p>ИНН *********</p>
          <p>ОГРН **********</p>

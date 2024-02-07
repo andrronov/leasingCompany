@@ -32,9 +32,9 @@ const navigation = [
   <div :class="{'dark': darkMode}" class="flex flex-col">
     <div class="w-full">
       <div class="flex flex-row justify-between items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 h-20">
-        <p>Leasing Paradise</p>
-        <div class="flex flex-row items-center gap-2">
-          <p class="text-base">+7 (966) 666 66 66</p>
+        <h1 class="text-lg xs:text-xl" id="font">Leasing Paradise</h1>
+        <div class="flex flex-row text-nowrap items-center gap-2">
+          <p class="text-sm xs:text-lg">+7 (966) 666 66 66</p>
           <defaultButton class="text-sm">Звонок</defaultButton>
         </div>
       </div>
@@ -117,3 +117,7 @@ const navigation = [
     <footerComponent :nav="navigation" />
   </div>
 </template>
+
+<style>
+
+</style>
