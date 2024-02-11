@@ -13,6 +13,7 @@ import mainSlider from './components/mainSlider.vue';
 import parallaxComponent from './components/parallaxComponent.vue'
 import footerComponent from './components/footerComponent.vue'
 import splashScreen from './components/splashScreen.vue'
+import phoneRing from './components/phoneRing.vue'
 
 const darkMode = ref(false)
 const marginBottom = ref('mb-24')
@@ -32,7 +33,7 @@ const navigation = [
 
 <template>
   <splashScreen />
-  <div id="top" :class="{'dark': darkMode}" class="flex flex-col">
+  <div id="top" :class="{'dark': darkMode}" class="flex flex-col relative">
     <div class="w-full">
       <div class="flex flex-row justify-between items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 h-20">
         <h1 class="text-lg xs:text-xl" id="font">Leasing Paradise</h1>
@@ -118,6 +119,7 @@ const navigation = [
     <parallaxComponent id="application" />
     <rates id="rate" />
     <footerComponent id="contacts" :nav="navigation" />
+    <phoneRing class="fixed bottom-5 right-6" />
   </div>
 </template>
 
