@@ -27,6 +27,7 @@ const navigation = [
    { name: 'Отзыв клиента', href: '#rate', current: false },
    { name: 'Контакты', href: '#contacts', current: false },
  ]
+
 </script>
 
 <template>
