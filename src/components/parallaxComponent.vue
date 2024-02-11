@@ -35,7 +35,7 @@
                <svg class="fill-blue-500 h-4 w-4" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
              </div>
               <div class="flex items-center justify-center w-full">
-                <button class="bg-dev-300 hover:bg-blue-900 w-1/2 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                <button @click="sendEmail" class="bg-dev-300 hover:bg-blue-900 w-1/2 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                   Отправить
                 </button>
               </div>
@@ -45,11 +45,5 @@
 </template>
 
 <script>
-</script>
 
-<!-- <template>
-   <div class="w-full h-1 relative">
-      <div class="mx-auto min-h-96 max-w-7xl bg-cover bg-fixed bg-center bg-no-repeat shadow-lg" style="background-image:url('https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp');">
-      </div>
-   </div>
-   </template> -->
+</script>
