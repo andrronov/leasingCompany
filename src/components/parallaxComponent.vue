@@ -54,6 +54,7 @@
 
 <script setup>
 import { reactive, ref } from "vue"
+import axios from 'axios'
 
 const dataForm = reactive({
   userName: '',
@@ -69,27 +70,28 @@ async function sendEmail(){
   loading.value = true
   if([name, phone, inn, transport].every(val => val.toString().length > 0)) {
     resLog.value = null
-    const res = await fetch(import.meta.env.VITE_SITE_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8'
-      },
-      body: JSON.stringify(dataForm)
-    });
-    const response = await res.json()
-    if(response.accepted){
-      loading.value = false
-      resLog.value = 'Заявка успешно отправлена!'
-    } else {
-      loading.value = false
-      resLog.value = `Возникла ошибка - ${response.response}`
-    } 
-  } else {
-    loading.value = false
-    resLog.value = 'Пожалуйста, заполните все поля'
-    setTimeout(() => {
-      resLog.value = null
-    }, 5000);
+    // const res = await fetch(import.meta.env.VITE_SITE_URL, {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json;charset=utf-8'
+    //   },
+    //   body: JSON.stringify(dataForm)
+    // });
+    axios.post('/api/application', dataForm).then(res => console.log(res)).catch(err => console.log(err))
+    // const response = await res.json()
+  //   if(response.accepted){
+  //     loading.value = false
+  //     resLog.value = 'Заявка успешно отправлена!'
+  //   } else {
+  //     loading.value = false
+  //     resLog.value = `Возникла ошибка - ${response.response}`
+  //   } 
+  // } else {
+  //   loading.value = false
+  //   resLog.value = 'Пожалуйста, заполните все поля'
+  //   setTimeout(() => {
+  //     resLog.value = null
+  //   }, 5000);
   }
 }
 </script>
