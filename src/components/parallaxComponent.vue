@@ -14,7 +14,7 @@
                 <label class="block text-white text-sm font-bold mb-2" for="phone">
                   Телефон
                 </label>
-                <input v-model="dataForm.userPhone" class="shadow focus:border-dev-300 appearance-none border-2 rounded w-full py-2 px-3 text-black mb-3 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="phone" placeholder="+7">
+                <input v-model="dataForm.userPhone" class="shadow focus:border-dev-300 appearance-none border-2 rounded w-full py-2 px-3 text-black mb-3 leading-tight focus:outline-none focus:shadow-outline" type="tel" id="phone" name="phone" placeholder="+7">
                 <!-- <p class="text-red-500 text-xs italic">Please choose a password.</p> -->
               </div>
               <div class="mb-6">
