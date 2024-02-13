@@ -53,7 +53,7 @@
 </template>
 
 <script setup>
-import { reactive, ref } from "vue";
+import { reactive, ref } from "vue"
 
 const dataForm = reactive({
   userName: '',
@@ -69,7 +69,7 @@ async function sendEmail(){
   loading.value = true
   if([name, phone, inn, transport].every(val => val.toString().length > 0)) {
     resLog.value = null
-    const res = await fetch('http://localhost:3003/api/application', {
+    const res = await fetch(import.meta.env.VITE_SITE_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
