@@ -77,21 +77,23 @@ async function sendEmail(){
     //   },
     //   body: JSON.stringify(dataForm)
     // });
-    axios.post('/api/application', dataForm).then(res => console.log(res)).catch(err => console.log(err))
-    // const response = await res.json()
-  //   if(response.accepted){
-  //     loading.value = false
-  //     resLog.value = 'Заявка успешно отправлена!'
-  //   } else {
-  //     loading.value = false
-  //     resLog.value = `Возникла ошибка - ${response.response}`
-  //   } 
-  // } else {
-  //   loading.value = false
-  //   resLog.value = 'Пожалуйста, заполните все поля'
-  //   setTimeout(() => {
-  //     resLog.value = null
-  //   }, 5000);
+    axios.post('/api/application', dataForm).then(res => {
+      if(res.status == 200){
+      loading.value = false
+      resLog.value = 'Заявка успешно отправлена!'
+    }
+    }).catch(err => {
+      if(err) {
+      loading.value = false
+      resLog.value = `Возникла ошибка - ${err}`
+    } 
+    })     
+  } else {
+    loading.value = false
+    resLog.value = 'Пожалуйста, заполните все поля'
+    setTimeout(() => {
+      resLog.value = null
+    }, 5000);
   }
 }
 </script>
