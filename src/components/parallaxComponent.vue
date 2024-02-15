@@ -31,9 +31,6 @@
                <option>Автотранспорт</option>
                <option>Спецтехника</option>
              </select>
-             <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-blue-700">
-               <svg class="fill-blue-500 h-4 w-4" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-             </div>
               <div class="flex flex-col items-center justify-center w-full gap-4">
                 <button @click="sendEmail" class="bg-dev-300 hover:bg-blue-900 w-1/2 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                   Отправить

@@ -4,7 +4,6 @@
       Что вы получаете выбирая нас?
     </h3>
     <div class="flex flex-row items-start max-w-3xl px-8 s:px-4 relative mb-6" v-for="(item, index) in items" :key="index">
-      <!-- <CheckIcon class="text-dev-300" /> -->
       <component :is="item.img" class="absolute -left-1 s:-left-6 -top-2 h-10 w-10 text-dev-300" aria-hidden="true" />
       <div>
         <h5 class="font-bold text-xl mb-3">{{ item.title }}</h5>
@@ -19,7 +18,6 @@
 <script setup>
 import {ref} from 'vue'
 import {CheckIcon} from '@heroicons/vue/24/solid'
-import defaultButton from './defaultButton.vue'
 
 const items = ref([
   {
