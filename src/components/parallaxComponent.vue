@@ -53,6 +53,8 @@
 import { reactive, ref } from "vue"
 import axios from 'axios'
 
+const axiosInstance = axios.create({baseURL: process.env.VITE_SITE_URL})
+
 const dataForm = reactive({
   userName: '',
   userPhone: '',
@@ -74,7 +76,7 @@ async function sendEmail(){
     //   },
     //   body: JSON.stringify(dataForm)
     // });
-    axios.post('/api/application', dataForm).then(res => {
+    axiosInstance.post('/api/application', dataForm).then(res => {
       if(res.status == 200){
       loading.value = false
       resLog.value = 'Заявка успешно отправлена!'
