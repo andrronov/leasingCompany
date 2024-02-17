@@ -69,24 +69,26 @@ async function sendEmail(){
   loading.value = true
   if([name, phone, inn, transport].every(val => val.toString().length > 0)) {
     resLog.value = null
-    // const res = await fetch(import.meta.env.VITE_SITE_URL, {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json;charset=utf-8'
-    //   },
-    //   body: JSON.stringify(dataForm)
-    // });
-    axiosInstance.post('/api/application', dataForm).then(res => {
-      if(res.status == 200){
+    const res = await fetch(import.meta.env.VITE_SITE_URL + 'api/application', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      },
+      body: JSON.stringify(dataForm)
+    });
+    if(res.ok){
       loading.value = false
       resLog.value = 'Заявка успешно отправлена!'
-    }
-    }).catch(err => {
-      if(err) {
+    } else {
       loading.value = false
       resLog.value = `Возникла ошибка - ${err}`
-    } 
-    })     
+    }
+    // }).catch(err => {
+    //   if(err) {
+    //   loading.value = false
+    //   resLog.value = `Возникла ошибка - ${err}`
+    // } 
+    // })     
   } else {
     loading.value = false
     resLog.value = 'Пожалуйста, заполните все поля'
