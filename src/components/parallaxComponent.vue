@@ -53,7 +53,7 @@
 import { reactive, ref } from "vue"
 import axios from 'axios'
 
-const axiosInstance = axios.create({baseURL: process.env.VITE_SITE_URL})
+const axiosInstance = axios.create({baseURL: import.meta.env.VITE_SITE_URL})
 
 const dataForm = reactive({
   userName: '',
