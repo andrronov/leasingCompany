@@ -3,7 +3,7 @@
    style="background-image:url('/parllx.png')">
          <div class="w-full max-w-sm px-4 text-white">
             <h2 class="font-bold text-xl text-center mb-2">Оставить заявку на лизинг</h2>
-            <form class="bg-white/15 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <form class="bg-white/15 shadow-md rounded px-8 pt-6 pb-8 mb-4" method="post" action="/submit">
               <div class="mb-4">
                 <label class="block text-white text-sm font-bold mb-2" for="username">
                   Имя
@@ -81,7 +81,7 @@ async function sendEmail(){
       resLog.value = 'Заявка успешно отправлена!'
     } else {
       loading.value = false
-      resLog.value = `Возникла ошибка - ${err}`
+      resLog.value = `Возникла ошибка - ${res}`
     }
     // }).catch(err => {
     //   if(err) {
